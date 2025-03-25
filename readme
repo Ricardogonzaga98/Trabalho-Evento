@@ -8,13 +8,13 @@
 
 3. Estrutura do Site (Páginas Principais)
 
- Home – Apresentação do evento, destaque para informações essenciais.
-Sobre o Evento – Objetivo, história e diferenciais.
-Programação – Lista de palestras, workshops e horários.
-Palestrantes – Informações sobre convidados e palestrantes.
-Ingressos / Inscrição – Formulário de inscrição e informações de compra.
-Localização – Mapa interativo e instruções de como chegar.
-Contato – Formulário de contato e redes sociais.
+• Home  Apresentação do evento, destaque para informações essenciais.
+• Sobre o Evento  Objetivo, história e diferenciais.
+• Programação  Lista de palestras, workshops e horários.
+• Palestrantes  Informações sobre convidados e palestrantes.
+• Ingressos  Inscrição Formulário de inscrição e informações de compra.
+• Localização  Mapa interativo e instruções de como chegar.
+• Contato  Formulário de contato e redes sociais.
 
 4. Recursos Técnicos
 	•	Plataforma:  HTML/CSS/JavaScript
@@ -26,3 +26,46 @@ Contato – Formulário de contato e redes sociais.
 	•	Cores e Tipografia que representem a identidade do evento.
 	•	Imagens e Vídeos para engajar visitantes.
 	•	Botões de Ação claros para inscrições e informações.
+
+
+    • Estrutura das Paginas
+
+Home
+ Destaque do evento (banner, data, local)  
+ Chamada para inscrição  
+ Contagem regressiva  
+ 
+
+Sobre o Evento  
+ Objetivo e público-alvo  
+ História   
+ Diferenciais do evento  
+  
+Programação  
+Lista de palestras e workshops  
+ Horários e locais  
+ 
+
+Palestrantes  
+Fotos e nomes  
+Mini biografia  
+Redes sociais  
+
+Ingressos / Inscrição  
+Tipos de ingresso e valores  
+ Botão de compra/inscrição  
+ Formas de pagamento  
+ 
+ Localização  
+ Mapa interativo  
+ Endereço completo  
+ 
+  
+ Contato  
+ Formulário de contato   
+ Telefone e e-mail  
+ Redes sociais  
+  
+ Patrocinadores e Parceiros  
+ Logos das empresas    
+ Como ser um patrocinador
