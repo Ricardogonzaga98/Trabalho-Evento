@@ -1,0 +1,28 @@
+1. Objetivo do Site
+	•	Divulgar informações sobre o evento (data, local, programação).
+	•	Facilitar inscrições e contato com os organizadores.
+	•	Atrair público-alvo com conteúdo atrativo.
+
+2. Público-Alvo
+	•	Quem são os visitantes do site? (Alunos, patrocinadores, participantes)
+
+3. Estrutura do Site (Páginas Principais)
+
+ Home – Apresentação do evento, destaque para informações essenciais.
+Sobre o Evento – Objetivo, história e diferenciais.
+Programação – Lista de palestras, workshops e horários.
+Palestrantes – Informações sobre convidados e palestrantes.
+Ingressos / Inscrição – Formulário de inscrição e informações de compra.
+Localização – Mapa interativo e instruções de como chegar.
+Contato – Formulário de contato e redes sociais.
+
+4. Recursos Técnicos
+	•	Plataforma:  HTML/CSS/JavaScript
+	•	Hospedagem e Domínio: Github Pages
+	•	Responsividade: Adaptado para mobile e desktop.
+	•	SEO e Marketing: Otimização para buscas e integração com redes sociais.
+
+5. Design 
+	•	Cores e Tipografia que representem a identidade do evento.
+	•	Imagens e Vídeos para engajar visitantes.
+	•	Botões de Ação claros para inscrições e informações.
