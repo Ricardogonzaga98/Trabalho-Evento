@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Contato do Evento GDG</h1>
+        <h1></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,7 +25,7 @@
         <h2>Entre em Contato</h2>
         <p>Se tiver dúvidas ou precisar de mais informações, entre em contato conosco!</p>
         
-        <form action="submit_form.php" method="POST">
+        <form onsubmit="return mostrarAlerta(event)">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required><br>
             
@@ -36,18 +36,18 @@
             <textarea id="mensagem" name="mensagem" required></textarea><br>
             
             <button type="submit">Enviar</button>
-        
         </form>
-
-      
     </main>
+
     <footer>
-        <p>&copy; 2025 Evento GDG - Todos os direitos reservados.</p>
+        <p>&copy; 2025 Evento X - Todos os direitos reservados.</p>
     </footer>
 
-    <script src="index.js"></script>
-
-   
+    <script>
+        function mostrarAlerta(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            alert("Cadastro finalizado com sucesso!");
+        }
+    </script>
 </body>
-
 </html>

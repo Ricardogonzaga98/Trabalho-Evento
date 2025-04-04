@@ -11,13 +11,18 @@ body {
 /* Cabeçalho */
 header {
     background-color: #004080;
+    background-image: url(/22060169-programacao-codigo-abstrato-tecnologia-fundo-do-programas-desenvolvedor-e-computador-roteiro-generativo-ai-foto.jpg);
     color: white;
-    padding: 15px;
+    font-size: 30px;
+    padding: 10px;
     text-align: center;
 }
 
+
+
 h1 {
     text-align: center;
+    
 }
 
 nav ul {
@@ -33,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(244, 242, 242);
     text-decoration: none;
     font-weight: bold;
 }
@@ -112,7 +117,7 @@ section.palestrantes {
 
 section.palestrantes h2 {
     font-size: 2.5em;
-    color: #004080;
+    color: #0f0f0f;
     margin-bottom: 40px;
 }
 
