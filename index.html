@@ -21,29 +21,73 @@
         </nav>
     </header>
 
-    
     <main>
         <h1>Bem-vindo ao Evento GDG!</h1>
-        <li> O  maior evento do ano. Fique por dentro de tudo.</li>
-        <p></p>
-        <li> Venha aprenda tudo sobre segurança em sistemas de autenticação, desde a criação até a desativação de credenciais. Descubra práticas seguras, autenticação múltipla e monitoramento para proteger seus sistemas contra ameaças e vulnerabilidades. Não perca essa oportunidade única!
-        </li>
-        <p></p>
-        <li>Uma das grandes experiencias na area de TI</li>
-        <p></p>
-        <li> Evento será dia 24 de Maio</li>
-        <p></p>
-        <li>Local: UniCesumar  Londrina-PR</li>
-        <p></p>
-        <li> Estamos contando os dia para esse momento !!</li>
-        <p></p>
+        <ul>
+            <p>O maior evento do ano. Fique por dentro de tudo.</p>
+            <p>Aprenda sobre segurança em sistemas de autenticação e proteção contra ameaças.</p>
+            <p>Uma das maiores experiências na área de TI.</p>
+            <p>📅 Evento será dia <strong>24 de Maio</strong>.</p>
+            <p>📍 Local: <strong>UniCesumar, Londrina-PR</strong>.</p>
+            <p>Estamos contando os dias para esse momento!!</p>
+        </ul>
+
+        <!-- Contador Regressivo -->
+        <h2 id="contador" style="color: red; font-size: 20px;">Carregando...</h2>
+
+        <!-- Relógio Digital -->
+        <h2>Hora Atual:</h2>
+        <h2 id="relogio" style="font-size: 24px; font-weight: bold;"></h2>
     </main>
 
-   
-    
     <footer>
         <p>&copy; 2025 Evento GDG - Todos os direitos reservados.</p>
     </footer>
-    <script src="index.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // ===== Contador Regressivo =====
+            const dataEvento = new Date(2025, 4, 24, 0, 0, 0).getTime();
+            const contadorElement = document.getElementById("contador");
+
+            function atualizarContador() {
+                const agora = new Date().getTime();
+                const diferenca = dataEvento - agora;
+
+                if (diferenca <= 0) {
+                    contadorElement.innerHTML = "O evento já começou!";
+                    return;
+                }
+
+                const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+                contadorElement.innerHTML = `Faltam ${dias}d ${horas}h ${minutos}m ${segundos}s para o evento!`;
+            }
+
+            setInterval(atualizarContador, 1000);
+            atualizarContador();
+
+            // ===== Relógio Digital =====
+            function atualizarRelogio() {
+                const agora = new Date();
+                let horas = agora.getHours();
+                let minutos = agora.getMinutes();
+                let segundos = agora.getSeconds();
+
+                // Formatar para 2 dígitos
+                horas = horas < 10 ? "0" + horas : horas;
+                minutos = minutos < 10 ? "0" + minutos : minutos;
+                segundos = segundos < 10 ? "0" + segundos : segundos;
+
+                document.getElementById("relogio").innerHTML = `${horas}:${minutos}:${segundos}`;
+            }
+
+            setInterval(atualizarRelogio, 1000);
+            atualizarRelogio();
+        });
+    </script>
 </body>
 </html>
