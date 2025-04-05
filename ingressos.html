@@ -23,8 +23,42 @@
     </header>
     
     <main>
-        <h1>Garanta seu ingresso</h1>
-        <p>Confira as opções e adquira seu ingresso.</p>
+       
+        <div class="container">
+            <h1>Escolha seu Ingresso</h1>
+            <p>Confira as opções e adquira seu ingresso.</p>
+        
+            <div class="cards">
+              <div class="card">
+                <img src="/images/download.jpeg" alt="Ingresso PADRÃO">
+                <h2>Ingresso Padrão</h2>
+                <p>Entrada básica para o evento.</p>
+                <button onclick="selecionarIngresso('Padrão')">Selecionar</button>
+              </div>
+        
+              <div class="card">
+                <img src="/images/download.jpeg" alt="Ingresso VIP">
+                <h2>Ingresso VIP</h2>
+                <p>Acesso à área VIP e brindes.</p>
+                <button onclick="selecionarIngresso('VIP')">Selecionar</button>
+              </div>
+        
+              <div class="card">
+                <img src="/images/download.jpeg" alt="Ingresso PREMIUM">
+                <h2>Ingresso Premium</h2>
+                <p>Tudo do VIP + Meet & Greet.</p>
+                <button onclick="selecionarIngresso('Premium')">Selecionar</button>
+              </div>
+            </div>
+          </div>
+        
+          <script>
+            function selecionarIngresso(tipo) {
+              alert(`Você selecionou o ingresso: ${tipo}`);
+              // Aqui você pode redirecionar, salvar no localStorage, ou enviar para um backend
+              // Exemplo: window.location.href = `/compra.html?tipo=${tipo}`;
+            }
+          </script>
 
 
     </main>
