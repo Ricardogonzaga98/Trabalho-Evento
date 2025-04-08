@@ -232,6 +232,18 @@ img {
 
   }
 
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-section {
+    margin-bottom: 0;
+    width: 30%;
+  }
+
+
 
 
 
