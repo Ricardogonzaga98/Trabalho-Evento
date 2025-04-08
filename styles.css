@@ -215,6 +215,23 @@ img {
     margin-bottom: 15px;
   }
 
+  .container {
+    width: 100%; /* em vez de 1200px */
+    padding: 2rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    .cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+  }
+
 
 
 
